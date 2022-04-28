@@ -8,10 +8,11 @@ provider "aws" {
 
 resource "aws_s3_bucket" "log_bucket" {
   bucket = "my-tf-log-bucket"
-  acl = "log-delivery-write"
+  acl    = "log-delivery-write"
   tags = {
-    Region = "us-east-1"
-    Demo = "log-delivery-write"
-    Version = "12"
+    Region    = "us-east-1"
+    Demo      = "log-delivery-write"
+    Version   = "12"
+    yor_trace = "cb47bcdf-ce9e-4190-9d31-2519bc1b765a"
   }
 }
